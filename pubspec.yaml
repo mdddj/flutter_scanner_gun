@@ -1,0 +1,29 @@
+name: scanner_gun
+description: 扫码枪spp模式获取数据
+version: 1.0.0
+homepage: https://github.com/mdddj/flutter_scanner_gun.git
+
+environment:
+  sdk: '>=2.12.0 <3.0.0'
+  flutter: ">=1.20.0 <2.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+
+flutter:
+
+  plugin:
+    platforms:
+      android:
+        package: shop.itbug.scanner_gun
+        pluginClass: ScannerGunPlugin
+      ios:
+        pluginClass: ScannerGunPlugin
+
+
